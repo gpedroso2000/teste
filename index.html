@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="divForm">
+    <form action="">
+      <header>
+        <p>Formulário <br> para compra de <br>
+          <b>Pacote de adesivos</b>
+        </p>
+        <img src="./icons8-caixa.svg" alt="logo" />
+      </header>
+      <section>
+        <div id="divCheckbox">
+          <span>Quais adesivos:</span>
+          <input type="checkbox" name="React" id="react"><label for="react">React</label>
+          <br>
+          <input type="checkbox" name="Vue" id="vue"><label for="vue">Vue</label>
+          <br>
+          <input type="checkbox" name="Angular" id="angular"><label for="angular">Angular</label>
+        </div>
+        <div id="divValue">
+          <span>Quais adesivos de cada ?</span>
+          <button id="btnDim" onclick="mudaQtd(this)" type="button">-</button>
+          <input id="qtd" type="number" value="0"></input>
+          <button id="btnAum" onclick="mudaQtd(this)" type="button">+</button>
+        </div>
+        <div id="divObs">
+          <span>Observações:</span>
+          <textarea name="" id="obs" cols="30" rows="10" placeholder="Alguma Duvida ? Recado ?"></textarea>
+        </div>
+      </section>
+      <footer>
+        <button type="button" onclick="finalizar()">ENVIAR</button>
+      </footer>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
